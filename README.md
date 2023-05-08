@@ -1,2 +1,2 @@
-# Senzala-Map
+# WorldwideSenzalaMap
 interactive map of Senzala Mestres
