@@ -1,15 +1,11 @@
-<head>
-  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-  <title>Worldwide Senzala Map</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0/leaflet.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0/leaflet.js"></script>
-  <style>
-    #map {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
+
+  <head>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Display a map</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0/leaflet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0/leaflet.js"></script>
+    <style>
+      #map {position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
     }
   </style>
 </head>
@@ -32,28 +28,28 @@
       crossOrigin: true
     }).addTo(map);
 
-    var imageUrl = 'https://i.postimg.cc/5Nt4fN8m/nautical-compass-rose-of-winds-marine-navigation-595252-37-1-1-2.png';
-    var imageBounds = [[6.887051030842943, -54.16183978030214], [36.70583989885273, -21.530543094812188]];
-    var overlay = L.imageOverlay(imageUrl, imageBounds);
-    overlay.addTo(map);
+                   var imageUrl= 'https://i.postimg.cc/5Nt4fN8m/nautical-compass-rose-of-winds-marine-navigation-595252-37-1-1-2.png';
+       var imageBounds = [[6.887051030842943, -54.16183978030214], [36.70583989885273, -21.530543094812188]];
+         var overlay = L.imageOverlay(imageUrl, imageBounds);
+         overlay.addTo(map);
 
-    var greenIcon = L.icon({
-      iconUrl: 'https://cdn-icons-png.flaticon.com/512/3885/3885113.png',
-      iconSize: [40, 40],
-      iconAnchor: [20, 40],
-      popupAnchor: [0, -50]
-    });
+            var greenIcon = L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/3885/3885113.png',
+        iconSize: [40, 40],
+        iconAnchor: [20, 40],
+        popupAnchor: [0, -50]
+      });
 
 
-    L.marker([-22.936941409888796, -43.19004642883497], { icon: greenIcon }).addTo(map)
+      L.marker([-22.936941409888796, -43.19004642883497], {icon:greenIcon}).addTo(map)
 
       .bindPopup('<p><b><span style="margin-left:90px;font-size:20px;text-align:center;font-family:segoe print">Mestre Beto</span></b><p style="font-size:15px;margin-left:25px;margin-right:5px;margin-top:5px;text-align:left;font-family:segoe print"><b>Label: </b><img style="margin-left: 10px" src="https://static.wixstatic.com/media/8e20e3_a7748ace886e4be7a8e491277ec17e36~mv2.png/v1/fill/w_138,h_140,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8e20e3_ce47282406f64a23a1014f7f70da3aef.png"></p>    <!----><p style="font-size:15px;margin-left:10px;margin-right:5px;margin-top:5px;text-align:left;font-family:segoe print"><b>Group: </b><a target = _blank>Centro Cultural Senzala de Capoeira</a></p><p style="font-size:15px;margin-left:10px;margin-right:5px;margin-top:5px;text-align:left;font-family:segoe print"><b>Address: </b><a target = _blank href="https://www.google.com.ua/maps/place/R.+das+Laranjeiras,+397+-+Laranjeiras,+Rio+de+Janeiro+-+RJ,+22240-005,+%D0%91%D1%80%D0%B0%D0%B7%D0%B8%D0%BB%D0%B8%D1%8F/@-22.9371192,-43.1922244,17z/data=!3m1!4b1!4m6!3m5!1s0x997f946e8bb0cd:0xb6abaaff8c87d3ea!8m2!3d-22.9371242!4d-43.1900357!16s%2Fg%2F11c4byngfn?hl=ru">Rua das Laranjeiras, 397, Rio de Janeiro, RJ, Brazil</a></p>     <!----> <p style="font-size:15px;margin-left:10px;margin-right:5px;margin-top:5px;text-align:left;font-family:segoe print"><b>Phone Number: </b><a target = _blank>+55 21 99710-4524</a></p><!----><p style="font-size:15px;margin-left:10px;margin-right:5px;margin-top:5px;text-align:left;font-family:segoe print"><b>Instagram: </b><a target = _blank href="https://www.instagram.com/mestrebeto/">mestrebeto</a></p><!----><p style="font-size:15px;margin-left:10px;margin-right:5px;margin-top:5px;text-align:left;font-family:segoe print"><b>Facebook: </b><a target = _blank href="https://www.facebook.com/mestrebetocapoeira/?locale=ru_RU">Mestre Beto - Grupo Senzala de Capoeira</a></p><!----><p style="font-size:15px;margin-left:10px;margin-right:5px;margin-top:5px;text-align:left;font-family:segoe print"><b>Email: </b><a target = _blank>mestrebeto2000@yahoo.com.br</a></p>');
 
-    L.marker([-22.407505771014584, -42.96765146367088], { icon: greenIcon }).addTo(map)
+      L.marker([-22.407505771014584, -42.96765146367088], {icon:greenIcon}).addTo(map)
 
       .bindPopup('<p><b><span style="margin-left:85px;font-size:20px;text-align:center;font-family:segoe print">Mestre Elias</span></b><p style="font-size:15px;margin-left:10px;margin-right:5px;margin-top:5px;text-align:left;font-family:segoe print"><b>Label: </b><img style="width: 150px;height: 150px;margin-left: 15px" src="https://static.wixstatic.com/media/9e1f9b_1bd12c55bd184209bac1ec8b73a357ec~mv2.png/v1/fill/w_400,h_400,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo.png"></p> <!----><p style="font-size:15px;margin-left:10px;margin-right:5px;margin-top:5px;text-align:left;font-family:segoe print"><b>Group: </b><a target = _blank href="https://www.senzala.org.br/?fbclid=IwAR0pc8-oNFt9Twc7sg6qPK0iNxhneb4EVMR_C1S5Ep6AYX4EW18Iqub43EI">Escola de Capoeira Grupo Senzala (Mestre Elias)</a></p> <!----><p style="font-size:15px;margin-left:10px;margin-right:5px;margin-top:5px;text-align:left;font-family:segoe print"><b>Address: </b><a target = _blank href="https://www.google.com.ua/maps/place/R.+Heitor+de+Moura+Estev%C3%A3o,+270+-+V%C3%A1rzea,+Teres%C3%B3polis+-+RJ,+25953-090,+%D0%91%D1%80%D0%B0%D0%B7%D0%B8%D0%BB%D0%B8%D1%8F/@-2.408103,-42.9697114,17z/data=!3m1!4b1!4m6!3m5!1s0x984cc47216a971:0x1d631b0e82bb0ca7!8m2!3d-22.408108!4d-42.9675227!16s%2Fg%2F11c2c9l33b?hl=ru">Rua Heitor de Moura Estevão, 270 (Centro), Teresópolis, RJ, Brazil</a></p><!----><p style="font-size:15px;margin-left:10px;margin-right:5px;margin-top:5px;text-align:left;font-family:segoe print"><b>Phone Number: </b><a target = _blank>+55-21-97656-6762</a></p><!----><p style="font-size:15px;margin-left:10px;margin-right:5px;margin-top:5px;text-align:left;font-family:segoe print"><b>Facebook: </b><a target = _blank href="https://www.facebook.com/MestreElias/about_contact_and_basic_info">Maître Elias</a></p><!----><p style="font-size:15px;margin-left:10px;margin-right:5px;margin-top:5px;text-align:left;font-family:segoe print"><b>Instagram: </b><a target = _blank href="https://www.instagram.com/mestreelias/">mestreelias</a></p><!----><p style="font-size:15px;margin-left:10px;margin-right:5px;margin-top:5px;text-align:left;font-family:segoe print"><b>Email: </b><a target = _blank>elias@senzala.org.br</a></p>');
 
-    L.marker([-22.961264746281426, -43.16944064902235], { icon: greenIcon }).addTo(map)
+      L.marker([-22.961264746281426, -43.16944064902235], {icon:greenIcon}).addTo(map)
 
       .bindPopup('<p><b><span style="margin-left:80px;font-size:20px;text-align:center;font-family:segoe print">Mestre Ramos</span></b><p style="font-size:15px;margin-left:10px;margin-right:5px;margin-top:5px;text-align:left;font-family:segoe print"><b>Label: </b><img style="margin-left: 10px" src="https://iledeseupeixinho.com/____impro/1/onewebmedia/Ramos%20logo.png?etag=%223311-6060d8ee%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=179%2B180&extract=0%2B0%2B179%2B179" style="margin-left:45px;width:100px;height:100px"></p> <!----><p style="font-size:15px;margin-left:10px;margin-right:5px;margin-top:5px;text-align:left;font-family:segoe print"><b>Group: </b><a target = _blank href="https://www.lalaue.com/capoeira-schools/centro-cultural-senzala-de-capoeira">Capoeira do Memória Viva - Grupo Senzala</a></p> <!----><p style="font-size:15px;margin-left:10px;margin-right:5px;margin-top:5px;text-align:left;font-family:segoe print"><b>Address: </b><a target = _blank href="https://www.google.com.ua/maps/place/Ladeira+Ary+Barroso,+1+-+Leme,+Rio+de+Janeiro+-+RJ,+22010-060,+%D0%91%D1%80%D0%B0%D0%B7%D0%B8%D0%BB%D0%B8%D1%8F/@-22.9614771,-43.1719619,17z/data=!3m1!4b1!4m6!3m5!1s0x998004031b8ca5:0xbc2e69e63af37867!8m2!3d-22.9614821!4d-43.169387!16s%2Fg%2F11csgqsqqv?hl=ru">Ladeira Ari Barroso, 1 - Leme, RJ</a></p><!----><p style="font-size:15px;margin-left:10px;margin-right:5px;margin-top:5px;text-align:left;font-family:segoe print"><b>Phone Number: </b><a target = _blank>+55 21 98169-0435</a></p><!----><p style="font-size:15px;margin-left:10px;margin-right:5px;margin-top:5px;text-align:left;font-family:segoe print"><b>Facebook: </b><a target = _blank href="https://www.facebook.com/mestre.ramos">Mestre Ramos</a></p><!----><p style="font-size:15px;margin-left:10px;margin-right:5px;margin-top:5px;text-align:left;font-family:segoe print"><b>Instagram: </b><a target = _blank href="https://www.instagram.com/capoeiramos/">capoeiramos</a></p><!----><p style="font-size:15px;margin-left:10px;margin-right:5px;margin-top:5px;text-align:left;font-family:segoe print"><b>Email: </b><a target = _blank>ccsmemoriaviva@hotmail.com</a></p>');
 
@@ -236,5 +232,5 @@
 
 
 
-  </script>
-</body>
+    </script>
+  </body>
